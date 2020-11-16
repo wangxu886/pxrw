@@ -1,0 +1,20 @@
+server:
+  port: 8066
+spring:
+  datasource:
+    username: root
+    password: ahulab2020
+    url: jdbc:mysql://117.78.27.45:18006/wangxu?serverTimezone=GMT&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #   数据源其他配置
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 600000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
